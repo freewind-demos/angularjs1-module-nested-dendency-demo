@@ -1,13 +1,13 @@
-const helloModule = angular.module('helloModule', [])
+const helloModule = angular.module('helloModule', ['core'])
 
 helloModule.controller('helloController', function ($scope) {
-    $scope.moduleName = 'HelloModule'
+  $scope.moduleName = 'HelloModule'
 })
 
 helloModule.directive('helloDirective', function () {
-    return {
-        link: function ($scope, $element, $attrs) {
-            $element.append('<div class="bg-yellow">(Hello from ' + $scope.moduleName + ')</div>')
-        }
+  return {
+    link: function ($scope, $element, $attrs) {
+      $element.append('<div class="bg-yellow">(Hello from ' + $scope.moduleName + ')</div>')
     }
+  }
 })

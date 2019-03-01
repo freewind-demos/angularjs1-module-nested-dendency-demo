@@ -1,13 +1,12 @@
-AngularJS1 Module Demo
-======================
+AngularJS1 Module Nested Dependeny Demo
+=======================================
 
-`module`可以用来分组，把多个相关的factory/service/controller/directive等等放在一个命名空间下。
+测试一下，如果appModule依赖的module本身也有自己依赖的module，那么在appModule中，
+到底需不需要显式声明所有的依赖。
 
-一个module还可以依赖其它的module，被依赖的module中定义的东西将自动可用。
+答案是不用。
 
 ```
 npm install
 npm run demo
 ```
-
-![demo](./images/demo.jpg)
