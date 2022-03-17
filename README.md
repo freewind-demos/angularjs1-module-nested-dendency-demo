@@ -8,5 +8,5 @@ AngularJS1 Module Nested Dependeny Demo
 
 ```
 npm install
-npm run demo
+npm start
 ```
